@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body bgcolor="black">
+    <!-- simple tabel start -->
+    <table width="600" border="1" cellspacing="0" cellpadding="10" align="center" bgcolor="white">
+      <tr>
+        <th colspan="3">Student List</th>
+        <!-- <th></th> -->
+        <!-- <th></th> -->
+      </tr>
+      <tr bgcolor="lightgray">
+        <td>S.N.</td>
+        <td>Name</td>
+        <td>City</td>
+      </tr>
+      <tr>
+        <td>01</td>
+        <td>Aslam Mia</td>
+        <td>Dhaka</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>Kamal Mia</td>
+        <td>Khulna</td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="middle">04</td>
+        <td>Abdullah</td>
+        <td rowspan="2">Norshindi</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td>Shifa</td>
+        <!-- <td></td> -->
+      </tr>
+    </table>
+    <!-- simple tabel end -->
+    <br /><br />
+
+    <!-- form inside table start -->
+    <form action="">
+      <table bgcolor="white" width="600" align="center" cellspacing="0" cellpadding="10">
+        <tr>
+          <td colspan="3">
+            <h2>Sign-up form for student</h2>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Your Name</label></td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="">Your Email</label></td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="">Your Gender</label></td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female" />Female
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Your Skills</label></td>
+          <td>:</td>
+          <td>
+            <input type="checkbox" name="skills" value="HTML" />HTML
+            <input type="checkbox" name="skills" value="CSS" />CSS
+            <input type="checkbox" name="skills" value="Bootstrap" />Bootstrap
+            <input type="checkbox" name="skills" value="JS" />JS
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Your Ptiture</label></td>
+          <td>:</td>
+          <td>
+            <input type="file" />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <input type="submit" value="Sign-up" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <!-- form inside table end -->
+  </body>
+</html>

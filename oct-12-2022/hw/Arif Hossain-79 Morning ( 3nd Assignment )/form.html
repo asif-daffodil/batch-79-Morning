@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=fo, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2><u>Registration Form</u></h2>
+    <form action="">
+      <label for="yname">Your Name</label>
+      <input
+        type="text"
+        placeholder="Your Name"
+        id="yname"
+        required
+        minlength="4"
+        maxlength="10"
+      />
+      <br /><br />
+      <label for="email">Your Email</label>
+      <input type="email" placeholder="Email Address" id="email" required />
+      <br /><br />
+      <label for="web">Website</label>
+      <input type="url" id="web" placeholder="Web Address" />
+      <br /><br />
+      <label for="phone">Mobile</label>
+      <input type="number" id="phone" placeholder="Mobile Number" />
+      <br /><br />
+      <label for="pass">Password</label>
+      <input type="password" id="pass" placeholder="Your Password" />
+      <br /><br />
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" placeholder="Date of Birth" />
+      <br /><br />
+      <label for="tob">Time of Birth</label>
+      <input type="time" id="tob" placeholder="Time of Birth" />
+      <br /><br />
+      <label for="hc">Hair color</label>
+      <input type="color" id="hc" placeholder="Hair Color" />
+      <br /><br />
+      <label for="range">Voice Range</label>
+      <input type="range" id="range" />
+      <br /><br />
+      <label for="gndr">Gender</label>
+      <input type="radio" name="gndr" value="male" /> Male
+      <input type="radio" name="gndr" value="female" /> Female
+      <input type="radio" name="gndr" value="others" /> Others <br /><br />
+      <label for="qta">Quata</label>
+      <input type="checkbox" name="qta" value="Disabled" /> Disabled
+      <input type="checkbox" name="qta" value="Male" /> Male
+      <input type="checkbox" name="qta" value="Female" /> Female
+      <input type="checkbox" name="qta" value="Tribe" /> Tribe
+      <input type="checkbox" name="qta" value="Freedom Fighter" /> Freedom
+      Fighter <br /><br />
+      <label for="count">Country</label>
+      <select name="" id="count">
+        <option value="">--SELECT COUNTRY--</option>
+        <option value="BD">Bangladesh</option>
+        <option value="PAK">Pakistan</option>
+        <option value="IN">India</option>
+        <option value="Others">Others</option></select
+      ><br /><br />
+      <label for="cmnt">Your Comments</label><br />
+      <textarea
+        name=""
+        id="cmnt"
+        cols="50"
+        rows="5"
+        placeholder="your comments"
+      ></textarea>
+      <br /><br />
+      <label for="pp">Profile Picture</label>
+      <input type="file" id="pp" />
+      <br /><br />
+      <input type="Reset" value="Reload" />
+      <input type="Submit" value="Sign Up" />
+    </form>
+  </body>
+</html>
