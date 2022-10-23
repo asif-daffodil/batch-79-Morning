@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}    
+.main {
+    width:600px ;
+    height:400px ;
+    margin:200px ;
+    
+}
+.black {
+    width: 100%;
+    background-color: black;
+    height: 33%;
+   
+}
+.red{
+    width: 100%;
+    background-color: red;
+    height: 34%;
+    
+}
+.gold{
+    width: 100%;
+    background-color: gold;
+    height: 33%;
+    
+}

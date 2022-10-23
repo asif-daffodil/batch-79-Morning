@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Flag{
+    background: mediumaquamarine;
+    width: auto;
+    height: auto;
+    color: brown;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: Arial;
+    text-transform: uppercase;
+    margin: 100px;
+     text-align: center;
+    text-shadow: 3px 3px 3px black;
+    border: 10px solid rebeccapurple;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rebeccapurple inset;
+    
+    
+}
+
+.main {
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+.Moon {
+    width: 100%;
+    height: 35%;
+    background: black;
+    
+}
+.Nishi {
+    width: 100%;
+    height: 30%;
+    background: red;
+    
+}
+.Akhi {
+    width: 100%;
+    height: 35%;
+    background: gold;
+    
+}

@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{background: #ffffff;}
+.main{
+  margin: 150px auto;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+.top-shape{
+  height: 33.3%;
+  width: 100%;
+  background: #000000;
+}
+.middle-shape{
+  height: 33.3%;
+  width: 100%;
+  background: #FF0000;
+}
+.bottom-shape{
+  height: 33.3%;
+  width: 100%;
+  background: #FFCC00;
+}
