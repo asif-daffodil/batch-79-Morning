@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: #282828;
+}
+
+.container {
+  width: 640px;
+  height: 360px;
+  margin: auto;
+  background: url("../images/messi.png") no-repeat 100% 100% / auto 100%, #fff;
+  /* 
+  background-image: url("../images/messi.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: auto 100%; 
+  background-color: #fff;
+  */
+}
+
+.text {
+  height: 100%;
+  width: 432px;
+  background: #00f;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+  padding: 0 84px;
+}
+
+.text > h2 {
+  font-size: 26px;
+  padding: 36px 0;
+}
+
+.text > p {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.text > button {
+  width: 121px;
+  height: 33px;
+  background: #ec2c55;
+  border-width: 0;
+  border-radius: 14%/50%;
+}
