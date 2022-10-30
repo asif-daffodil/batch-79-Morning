@@ -1,0 +1,48 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "jorina";
+  src: url("../fonts/Fasthand/Fasthand-Regular.ttf");
+}
+
+@font-face {
+  font-family: "sokhina";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf");
+}
+
+.parent {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to top right, #000, #fff, #000);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.chield {
+  width: 350px;
+  height: 200px;
+  background: radial-gradient(#000, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+  margin: 10px 0;
+}
+
+.ff {
+  font-family: "jorina";
+  padding: 40px;
+}
+
+.vodro {
+  font-family: "sokhina";
+}

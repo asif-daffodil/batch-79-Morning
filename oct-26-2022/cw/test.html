@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+      .pain {
+        width: 100%;
+        height: 200px;
+        background: dodgerblue;
+        padding: 10px;
+        position: relative;
+      }
+      .rain {
+        width: 180px;
+        height: 180px;
+        background: orange;
+        transition: 1s;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .pain:hover > .rain {
+        left: calc(100% - 190px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="pain">
+        <div class="rain"></div>
+      </div>
+    </div>
+  </body>
+</html>

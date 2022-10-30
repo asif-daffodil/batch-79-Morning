@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: gray;
+    display: flex;
+}
+.srk{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-image: url("./Images/Srk.jpg");
+    position: relative;
+}
+.pic1{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("./Images/kat.jpg");
+    top: -75px;
+    left: -75px;
+    transition: 0.40s;
+
+}
+.pic2{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("./Images/depeka.png");
+    bottom: -75px;
+    right: -75px;
+    transition: 0.40s;
+}
+.pic3{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("./Images/priyanka.jpg");
+    top: -75px;
+    right: -75px;
+    transition: 0.40s;
+}
+.pic4{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("./Images/pari.jpg");
+    bottom: -75px;
+    left: -75px;
+    transition: 0.40s;
+}
+.srk:hover >.pic1{
+    top: 225px;
+    left: 225px;
+}
+.srk:hover >.pic2{
+    bottom: 225px;
+    right: 225px;
+}
+.srk:hover >.pic3{
+    top: 225px;
+    right: 225px;
+}
+.srk:hover >.pic4{
+    bottom: 225px;
+    left: 225px;
+}
