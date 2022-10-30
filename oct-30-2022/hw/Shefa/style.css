@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Playfair+Display:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.f1{
+    background-color: darkorchid;
+    width: 90%;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 80px ;
+    margin-bottom: 20px;
+    justify-content: center;
+    box-shadow: 10px black,10px black inset;
+    display: flex;
+}
+.main{
+    width: 100%;
+    height: 700px;
+    background-color: bisque;
+    display: flex; 
+}
+
+
+.flag{
+    width: 600px;
+    height: 400px;
+    background-color: aqua;
+    position: relative;
+    margin: auto;
+    margin-left: 40% ;
+    border: 1px solid black;
+}
+.black{
+    width: 33%;
+    height: 100%;
+    background-color: black; 
+    position: absolute;   
+}
+.gold{
+    width: 34%;
+    height: 100%;
+    position: absolute;
+    margin-left: 33%;
+    background-color: gold;
+}
+.red{
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    margin-left: 67%;
+    background-color: #EF4135;
+}
+.flag:hover > .black{
+    background-color: #002654;
+}
+.flag:hover > .gold{
+    background-color: #fff;
+}
+@font-face {
+    font-family: "p1";
+    src: url(./fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: "p2";
+    src: url(./fonts/Fasthand/Fasthand-Regular.ttf);
+}
+@font-face {
+    font-family: "p3";
+    src: url(./fonts/Crimson_Text/CrimsonText-Bold.ttf);
+}
+@font-face {
+    font-family: "p4";
+    src: url(./fonts/FjallaOne-Regular.ttf);
+}
+@font-face {
+    font-family: "s2";
+    src: url(./fonts/LobsterTwo-Regular.ttf);
+}
+@font-face {
+    font-family: "s3";
+    src: url(./fonts/AkayaTelivigala-Regular.ttf);
+}
+
+.p1{
+    width: 100%;
+    height: 100px;
+    background-color: coral;
+    padding: 40px;
+    font-family: "p1";
+    color: #fff;
+}
+.p2{
+    width: 100%;
+    height: 200px;
+    background-color: darksalmon;
+    padding: 50px;
+    font-family: "p2";
+    color: #000;
+
+}
+.s1{
+    font-family: "p1";
+}
+.p3{
+    width: 100%;
+    height: 250px;
+    background-color: darkmagenta;
+    padding: 70px;
+    font-family: "p3";
+    color: #fff;
+}
+.s2{
+    font-family: "s2";
+}
+
+.p4{
+    width: 100%;
+    height: 250px;
+    background-color: brown;
+    padding: 70px;
+    font-family: "p4";
+    color: #fff;
+}
+.s3{
+    font-family: "s3";
+}

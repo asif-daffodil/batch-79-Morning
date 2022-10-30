@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@font-face {
+    font-family: "Raleway";
+    src: url("../Fonts/Raleway/static/Raleway-Italic.ttf");
+}
+@font-face {
+    font-family: "Poppins_2";
+    src: url("../Fonts/Poppins/Poppins-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "Raleway_Varialbe";
+    src: url("../Fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+dt {
+    font-weight: 700;
+}
+
+.para_2 {
+    font-family: "Poppins";
+}
+
+.para_3 {
+    font-family: "Fasthand";
+}
+
+.para_4 {
+    font-family: "Raleway";
+}
+
+.para_5 {
+    font-family: "Poppins_2";
+}
+
+footer {
+    margin: 0 0 20px 20px;
+}

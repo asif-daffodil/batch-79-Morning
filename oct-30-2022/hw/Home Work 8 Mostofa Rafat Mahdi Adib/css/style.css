@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background: gray;
+  display: flex;
+}
+
+@font-face {
+  font-family: "firstparagraph";
+  src: url(./fonts/Fasthand/Fasthand-Regular.ttf);
+}
+@font-face {
+  font-family: "secondparagraph";
+  src: url(./fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: "thirdparagraph";
+  src: url(./fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "fourthparagraph";
+  src: url(./fonts/Roboto_Condensed/RobotoCondensed-LightItalic.ttf);
+}
+
+.paragraph1 {
+  font-family: "firstparagraph";
+}
+.paragraph2 {
+  font-family: "secondparagraph";
+}
+.paragraph3 {
+  font-family: "thirdparagraph";
+}
+.paragraph4 {
+  font-family: "fourthparagraph";
+}
+
+.flag {
+  height: 50vh;
+  width: 100vh;
+  margin: 100px;
+  left: 200vh;
+  background: linear-gradient(
+    to right,
+    #000000 33.333%,
+    #fdda24 33.33% 66.666%,
+    #ef3340 66.666%
+  );
+  border: 5px solid black;
+}
+
+.flag:hover {
+  background: linear-gradient(
+    to right,
+    navy 33.333%,
+    white 33.33% 66.666%,
+    red 66.666%
+  );
+}
