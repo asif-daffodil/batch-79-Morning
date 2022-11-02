@@ -19,6 +19,10 @@
   grid-gap: 20px;
 }
 
+.main div {
+  border-radius: 8px;
+}
+
 .main > div:first-child {
   background: #ccc;
 }
@@ -49,4 +53,82 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pain {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "pd1 pd1 pd1 pd1 pd1 pd1"
+    "pd1 pd1 pd1 pd1 pd1 pd1"
+    "pd2 pd3 pd3 pd3 pd3 pd3"
+    "pd2 pd3 pd3 pd3 pd3 pd3"
+    "pd2 pd3 pd3 pd3 pd3 pd3"
+    "pd2 pd3 pd3 pd3 pd3 pd3"
+    "pd2 pd3 pd3 pd3 pd3 pd3"
+    "pd2 pd3 pd3 pd3 pd3 pd3"
+    "pd2 pd4 pd4 pd4 pd4 pd4"
+    "pd2 pd4 pd4 pd4 pd4 pd4";
+}
+
+.pain > div {
+  background: #ccc;
+  border-radius: 8px;
+}
+
+.pain > div:first-child {
+  grid-area: pd1;
+}
+.pain > div:nth-child(2) {
+  grid-area: pd2;
+}
+.pain > div:nth-child(3) {
+  grid-area: pd3;
+}
+.pain > div:last-child {
+  grid-area: pd4;
+}
+
+.rain {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  background: #ccc;
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "area1 area2 area3"
+    "area4 area4 area3";
+  border-radius: 8px;
+}
+
+.rain > div {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+  transition: 1s;
+}
+
+.rain > div:hover {
+  background: cornflowerblue;
+}
+
+.rain > div:nth-child(1) {
+  grid-area: area1;
+}
+.rain > div:nth-child(2) {
+  grid-area: area2;
+}
+.rain > div:nth-child(3) {
+  grid-area: area3;
+}
+.rain > div:nth-child(4) {
+  grid-area: area4;
 }
