@@ -1,0 +1,80 @@
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  margin: 110px 140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  align-items: center;
+}
+
+.card > article {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 290px;
+  transition: transform 0.3s;
+}
+
+.card > article:hover {
+  transform: translateY(5px);
+  box-shadow: 2px 2px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card > article img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.text {
+  padding: 0 20px 20px;
+  font-family: sans-serif;
+}
+
+.text h3 {
+  text-transform: uppercase;
+  color: crimson;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
+}
+
+.text p {
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 500;
+}
+
+.text button {
+  background: crimson;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 17px;
+  margin: 15px 1px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.text button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}

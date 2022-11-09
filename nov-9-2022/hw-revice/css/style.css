@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main > header {
+}
+.main > header > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #000;
+  letter-spacing: 2px;
+  margin-top: 32px;
+}
+.main > header > p {
+  text-align: center;
+  color: #dc143b;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 80%;
+  height: 6px;
+  background: #000;
+  position: relative;
+  margin: 32px auto;
+}
+
+.main > header > p::before {
+  content: attr(myAttr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 0 16px;
+}
+
+.main > main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main > main > div {
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #000;
+  padding-bottom: 20px;
+  overflow: hidden;
+  margin: 10px;
+}
+.main > main > div > img {
+  width: 100%;
+}
+.main > main > div > h3 {
+  text-align: center;
+  color: #dc143b;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.main > main > div > p {
+  text-align: center;
+  margin: 20px 0;
+}
+.main > main > div > button {
+  width: 80%;
+  background: #dc143b;
+  color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  border-width: 0;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}

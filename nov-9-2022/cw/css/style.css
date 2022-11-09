@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  display: grid;
+  color: #fff;
+  grid-gap: 12px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .main {
+    background: dodgerblue;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 24px;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
+  .main {
+    background: limegreen;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .main {
+    background: orange;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 12px;
+  }
+}
+
+.kuddus {
+  background: coral;
+  animation: boyati 2s infinite linear;
+}
+
+@keyframes boyati {
+  0% {
+    width: 150px;
+    height: 150px;
+  }
+  50% {
+    width: 300px;
+    height: 300px;
+    transform: translate(50%, 50%) rotate(360deg);
+    border-radius: 50%;
+    background: cornflowerblue;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
