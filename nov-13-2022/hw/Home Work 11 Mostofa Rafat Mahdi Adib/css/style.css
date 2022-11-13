@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: skyblue;
+}
+
+.main {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  background: gray;
+}
+
+.jonsnow {
+  width: 300px;
+  height: 300px;
+  top: 300px;
+  left: 800px;
+  background: url(./Images/kit-harington-bio-net-worth-facts-300x300.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.jonsnow::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: url(./Images/rsz_arya.png);
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  transition: 1s;
+  animation: ani4 3s infinite ease-in-out;
+}
+
+.jonsnow::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: url(./Images/rsz_sophie_turner_unedited_1.png);
+  position: absolute;
+  bottom: -75px;
+  right: -75px;
+  transition: 1s;
+  animation: ani3 3s infinite ease-in-out;
+}
+
+.natalie {
+  width: 150px;
+  height: 150px;
+  background: url(./Images/rsz_natalie_dormer_unedited.png);
+  position: absolute;
+  bottom: -75px;
+  left: -75px;
+  transition: 1s;
+  animation: ani1 3s infinite ease-in-out;
+}
+
+.emilia {
+  width: 150px;
+  height: 150px;
+  background: url(./Images/rsz_original-emilia-clarke-png-79d58a87.png);
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  transition: 1s;
+  animation: ani2 3s infinite ease-in-out;
+}
+
+@keyframes ani1 {
+  0% {
+    width: 150px;
+    height: 150px;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+    transform: translate(-20%, 20%) rotate(360deg);
+    border-radius: 50%;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes ani2 {
+  0% {
+    width: 150px;
+    height: 150px;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+    transform: translate(20%, 20%) rotate(360deg);
+    border-radius: 50%;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes ani3 {
+  0% {
+    width: 150px;
+    height: 150px;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+    transform: translate(20%, 20%) rotate(360deg);
+    border-radius: 50%;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes ani4 {
+  0% {
+    width: 150px;
+    height: 150px;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+    transform: translate(-20%, 20%) rotate(360deg);
+    border-radius: 50%;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.jonsnow:hover::before {
+  top: 225px;
+  left: 225px;
+}
+
+.jonsnow:hover::after {
+  bottom: 225px;
+  right: 225px;
+}
+
+.jonsnow:hover > .natalie {
+  bottom: 225px;
+  left: 225px;
+}
+
+.jonsnow:hover > .emilia {
+  top: 225px;
+  right: 225px;
+}

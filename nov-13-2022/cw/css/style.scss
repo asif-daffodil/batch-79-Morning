@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$bgColor: #f5f;
+
+@mixin commonCode($w, $h, $m) {
+  width: $w;
+  height: $h;
+  margin: $m;
+  background: $bgColor;
+}
+
+.main {
+  @include commonCode(200px, 100px, 20px);
+}
+
+.pain {
+  @include commonCode(300px, 100px, 20px);
+}
+
+.rain {
+  @extend .pain;
+  background: #55f;
+}
+
+.bd {
+  @include commonCode(100px, 100px, 20px);
+  display: flex;
+  > .dhk {
+    @include commonCode(80px, 80px, auto);
+    background: #5f5;
+    display: flex;
+    > .dhanmondi {
+      @include commonCode(60px, 60px, auto);
+    }
+  }
+}
