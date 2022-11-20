@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  background-color: #ccc;
+}
+nav > ul {
+  width: 750px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+nav > ul li {
+  width: 100%;
+  position: relative;
+}
+nav > ul li a {
+  text-decoration: none;
+  line-height: 40px;
+  display: block;
+  color: white;
+  transition: 0.5s;
+}
+nav > ul li:hover {
+  background-color: rgb(186, 193, 190);
+}
+nav > ul li a:hover {
+  font-size: 1.25rem;
+}
+nav > ul li:hover > ul {
+  display: block;
+}
+
+nav > ul li > ul {
+  background-color: #ccc;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  list-style: none;
+  width: 100%;
+  display: none;
+}
+nav > ul li > ul > li > ul {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}
+.lr {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+}
+.dr {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+.cl {
+  position: absolute;
+  left: -100%;
+  top: 0%;
+}
+.gdr {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+.gdr1 {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}
+.gdr2 {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+}
+.gdr3 {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+}
+.gdr4 {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}
+.cdr {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+.bdr {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+.bdr1 {
+  position: absolute;
+  top: 10%;
+  left: -100%;
+}
+.bdr2 {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}
+.bdr3 {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+}
+.bdr4 {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}

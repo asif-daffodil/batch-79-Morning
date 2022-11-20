@@ -1,118 +1,193 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1080px){
-    body{
-        background-color: cadetblue !important;
-    }
+@media only screen and (min-width: 1080px) {
+  body {
+    background-color: cadetblue !important;
+  }
 }
-@media only screen and (min-width: 720px){
-    body{
-        background-color: slategrey ;
-    }
+@media only screen and (min-width: 720px) {
+  body {
+    background-color: slategrey;
+  }
 }
-@media only screen and (max-width: 720px){
-    body{
-        background-color: springgreen ;
-    }
-}
-
-
-
-
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-.main{
-    width: 300px;
-    height: 300px;
-    background-color: aqua;
-    display: flex;
-    margin: auto;
-    position: relative;
-    background-image: url("../Images/shakib-khan.jpg");
-
-}
-.p1{
-    background: url(../Images/p1.jpg);
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: -150px; left: -150px;
-    animation-name: p1;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    
-}
-@keyframes p1{
-    
-    0%{top: -150px; left: -150px;}
-    25%{top: -150px; left: 300px;}
-    50%{left: 300px; top: 300px;}
-    75%{top: 300px; left: -150px; }
-    100%{top: -150px; left: -150px;}
-    
+@media only screen and (max-width: 720px) {
+  body {
+    background-color: springgreen;
+  }
 }
 
- .p2{
-    background-image: url("../Images/p2.jpg") ;
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: -150px; right: -150px;
-    animation-name: p2;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
-@keyframes p2{
-    
-    0%{ top: -150px; right: -150px; }
-    25%{ right: -150px; top: 300px; }
-    50%{ top: 300px; right: 300px;}
-    75%{ right: 300px; top: -150px; }
-    100%{ top: -150px; right: -150px; }
-    
+.main {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  display: flex;
+  margin: auto;
+  position: relative;
+  background-image: url("../Images/shakib-khan.jpg");
+}
+.p1 {
+  background: url(../Images/p1.jpg);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -150px;
+  left: -150px;
+  animation: p1 5s infinite;
+}
+@keyframes p1 {
+  0% {
+    top: -150px;
+    left: -150px;
+  }
+  25% {
+    top: -150px;
+    left: 300px;
+  }
+  50% {
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    top: 300px;
+    left: -150px;
+  }
+  100% {
+    top: -150px;
+    left: -150px;
+  }
 }
 
-.p3{
-    background-image: url("../Images/p3.jpg");
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    bottom: -150px ; right: -150px ;
-    animation-name: p3;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    
+.Khan:hover > .p2 {
+  animation: p2h 5s infinite;
 }
-@keyframes p3{
-    0%{  bottom: -150px ; right: -150px ; }
-    25%{ bottom: -150px ; right: 300px; }
-    50%{ right: 300px; bottom: 300px; }
-    75%{ bottom: 300px; right: -150px ; }
-    100%{ bottom: -150px ; right: -150px ;}
+
+.p2 {
+  background-image: url("../Images/p2.jpg");
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -150px;
+  right: -150px;
+  animation: p2 5s infinite;
 }
-.p4{
-    background-image: url("../Images/p4.jpg") ;
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    bottom: -150px; left: -150px;
-    animation-name: p4;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    
-} 
-@keyframes p4{
-    0%{ bottom: -150px; left: -150px;}
-    25%{left: -150px; bottom: 300px;}
-    50%{ bottom: 300px; left: 300px;}
-    75%{ left: 300px;bottom: -150px; }
-    100%{ bottom: -150px; left: -150px;}
-} 
+@keyframes p2 {
+  0% {
+    top: -150px;
+    right: -150px;
+  }
+  25% {
+    right: -150px;
+    top: 300px;
+  }
+  50% {
+    top: 300px;
+    right: 300px;
+  }
+  75% {
+    right: 300px;
+    top: -150px;
+  }
+  100% {
+    top: -150px;
+    right: -150px;
+  }
+}
+
+@keyframes p2h {
+  0% {
+    top: -150px;
+    right: -150px;
+  }
+  25% {
+    right: 300px;
+    top: -150px;
+  }
+  50% {
+    top: 300px;
+    right: 300px;
+  }
+  75% {
+    right: -150px;
+    top: 300px;
+  }
+  100% {
+    top: -150px;
+    right: -150px;
+  }
+}
+
+.p3 {
+  background-image: url("../Images/p3.jpg");
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: -150px;
+  right: -150px;
+  animation-name: p3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes p3 {
+  0% {
+    bottom: -150px;
+    right: -150px;
+  }
+  25% {
+    bottom: -150px;
+    right: 300px;
+  }
+  50% {
+    right: 300px;
+    bottom: 300px;
+  }
+  75% {
+    bottom: 300px;
+    right: -150px;
+  }
+  100% {
+    bottom: -150px;
+    right: -150px;
+  }
+}
+.p4 {
+  background-image: url("../Images/p4.jpg");
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: -150px;
+  left: -150px;
+  animation-name: p4;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes p4 {
+  0% {
+    bottom: -150px;
+    left: -150px;
+  }
+  25% {
+    left: -150px;
+    bottom: 300px;
+  }
+  50% {
+    bottom: 300px;
+    left: 300px;
+  }
+  75% {
+    left: 300px;
+    bottom: -150px;
+  }
+  100% {
+    bottom: -150px;
+    left: -150px;
+  }
+}

@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.475);
+}
+nav > ul {
+  width: 750px;
+  background-color: #ccf;
+  list-style: none;
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+nav > ul li {
+  width: 100%;
+  position: relative;
+}
+nav > ul li a {
+  text-decoration: none;
+  display: block;
+  line-height: 40px;
+  color: white;
+  transition: 0.5s;
+}
+nav > ul li:hover {
+  background-color: cadetblue;
+}
+nav > ul li a:hover {
+  font-size: 1.25rem;
+}
+nav > ul li > ul {
+  list-style: none;
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #555;
+  top: 100%;
+  left: 0%;
+}
+nav > ul li:hover > ul {
+  display: block;
+}
+.adr {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+.lr1 {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+}
+.rr2 {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}
+.lr3 {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+}
+.rr4 {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}
+.lar2 {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+}
+.dar4 {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+.larr4 {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+}
+.crarr3 {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}
+.alarr3 {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+}

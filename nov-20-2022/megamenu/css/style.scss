@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 0px 200px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  background: #ccc;
+  position: relative;
+  > a {
+    padding: 20px;
+    > img {
+      height: 80px;
+    }
+  }
+  > .menu {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    width: calc(100% - 80px);
+    > li {
+      height: 100%;
+      > a {
+        text-decoration: none;
+        display: block;
+        font-family: arial;
+        color: #fff;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px #000;
+        line-height: 120px;
+        padding: 0 20px;
+        font-variant: small-caps;
+      }
+      &:hover {
+        background: #55f;
+        > a {
+          text-decoration: underline;
+        }
+        > .megaMenu {
+          display: flex;
+        }
+      }
+      .megaMenu {
+        width: calc(100% - 400px);
+        background-color: #55f;
+        background-image: url("../images/ecommerce-removebg-preview.png ");
+        background-repeat: no-repeat;
+        background-size: auto 200%;
+        background-position: 30px 10px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        justify-content: end;
+        padding: 20px;
+        > ul {
+          &:not(&:last-child) {
+            margin-right: 60px;
+          }
+          > li {
+            list-style: none;
+            &:not(&:first-child) {
+              /* list-style-image: url("../images/Green_tick.svg.png");
+              list-style-position: inside; */
+              padding-left: 12px;
+              background: url("../images/Green_tick.svg.png") no-repeat left
+                center / auto 10px;
+              > a {
+                text-decoration: none;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            > a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
