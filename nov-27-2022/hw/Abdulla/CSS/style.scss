@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  background-color: #cc5;
+  background-image: url("../Images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 200px 90%;
+  position: relative;
+  > ul {
+    width: 750px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    > li {
+      width: 100%;
+      list-style: none;
+      // line-height: 40px;
+      > a {
+        text-decoration: none;
+        line-height: 40px;
+        display: block;
+        color: white;
+        transition: 0.5s;
+      }
+      &:hover {
+        background-color: aqua;
+        // font-size: 1.5rem;
+        > ul {
+          display: block;
+        }
+      }
+      > .megamenu {
+        width: 75rem;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: blueviolet;
+        display: flex;
+        justify-content: end;
+        background-image: url("../Images/ecommerce-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-position: auto 50%;
+        > ul {
+          padding: 10px 30px;
+          > li {
+            list-style: none;
+            &:not(&:first-child) {
+              padding-left: 0.75rem;
+              background: url("../Images/tik.png") no-repeat left center / auto 10px;
+              > a {
+                text-decoration: none;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            > a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
