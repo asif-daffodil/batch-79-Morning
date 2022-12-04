@@ -1,0 +1,532 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #8684b4;
+  display: grid;
+  grid-gap: 1.25rem;
+  grid-template-rows: repeat(2, 1fr);
+}
+.main > div {
+  margin: 20px;
+  border-radius: 50px;
+}
+.main > :nth-child(1) {
+  //   background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 3.125rem;
+}
+.main > :nth-child(1) > div {
+  background-color: black;
+}
+.first {
+  display: grid;
+  grid-template-rows: 1.5fr 4fr;
+}
+.first > :nth-child(1) {
+  background-color: #73fed5;
+  position: relative;
+  > a {
+    margin: 5px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px black 10px;
+  }
+  > button {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #73fed5;
+    border-color: transparent;
+    font-size: 1.25rem;
+    color: white;
+  }
+}
+.first > :nth-child(2) {
+  background-color: white;
+  position: relative;
+  > img {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    left: calc(50%);
+    transform: translate(-50%);
+  }
+  > h2 {
+    position: absolute;
+    top: 3.125rem;
+    left: calc(50%);
+    transform: translate(-50%);
+    color: #c8c8c8;
+  }
+  > p {
+    position: absolute;
+    width: 15.625rem;
+    left: calc(40%);
+    color: #c8c8c8;
+  }
+  > footer {
+    position: absolute;
+    bottom: 3.125rem;
+    left: calc(50%);
+    transform: translate(-50%);
+    > a {
+      padding-left: 25px;
+      color: #c8c8c8;
+    }
+  }
+}
+
+.Second {
+  display: grid;
+  grid-template-rows: 1.5fr 4fr;
+}
+.Second > :nth-child(1) {
+  background-color: #9fc1fe !important;
+  position: relative;
+  > a {
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px black 10px;
+  }
+  > button {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #9fc1fe;
+    border-color: transparent;
+    font-size: 20px;
+    color: white;
+  }
+}
+.Second > :nth-child(2) {
+  background-color: white;
+  position: relative;
+  > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    left: calc(50%);
+    transform: translate(-50%);
+  }
+  > h2 {
+    // position: absolute;
+    top: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    color: #c8c8c8;
+  }
+  > p {
+    position: absolute;
+    width: 250px;
+    left: 150px;
+    color: #c8c8c8;
+  }
+  > footer {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    > a {
+      padding-left: 25px;
+      color: #c8c8c8;
+    }
+  }
+}
+
+.third {
+  display: grid;
+  grid-template-rows: 1.5fr 4fr;
+}
+.third > :nth-child(1) {
+  background-color: #adc0ea !important;
+  position: relative;
+  > a {
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px black 10px;
+  }
+  > button {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #73fed5;
+    border-color: transparent;
+    font-size: 20px;
+    color: white;
+  }
+}
+.third > :nth-child(2) {
+  background-color: white;
+  position: relative;
+  > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    left: calc(50%);
+    transform: translate(-50%);
+  }
+  > h2 {
+    position: absolute;
+    top: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    color: #c8c8c8;
+  }
+  > p {
+    position: absolute;
+    width: 250px;
+    left: 150px;
+    color: #c8c8c8;
+  }
+  > footer {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    > a {
+      padding-left: 25px;
+      color: #c8c8c8;
+    }
+  }
+}
+
+.forth {
+  display: grid;
+  grid-template-rows: 1.5fr 4fr;
+}
+.forth > :nth-child(1) {
+  background-color: #9bd9fe !important;
+  position: relative;
+  > a {
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px black 10px;
+  }
+  > button {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #73fed5;
+    border-color: transparent;
+    font-size: 20px;
+    color: white;
+  }
+}
+.forth > :nth-child(2) {
+  background-color: white;
+  position: relative;
+  > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    left: calc(50%);
+    transform: translate(-50%);
+  }
+  > h2 {
+    position: absolute;
+    top: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    color: #c8c8c8;
+  }
+  > p {
+    position: absolute;
+    width: 250px;
+    left: 150px;
+    color: #c8c8c8;
+  }
+  > footer {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    > a {
+      padding-left: 25px;
+      color: #c8c8c8;
+    }
+  }
+}
+
+.main > :nth-child(2) {
+  //   background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 50px;
+}
+.main > :nth-child(2) > div {
+  background-color: black;
+}
+.first {
+  display: grid;
+  grid-template-rows: 1.5fr 4fr;
+}
+.first > :nth-child(1) {
+  background-color: #73fed5;
+  position: relative;
+  > a {
+    margin: 5px;
+    color: white;
+    box-shadow: 0px 0px black 10px;
+  }
+  > button {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #73fed5;
+    border-color: transparent;
+    font-size: 20px;
+    color: white;
+  }
+}
+.first > :nth-child(2) {
+  background-color: white;
+  position: relative;
+  > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    left: calc(50%);
+    transform: translate(-50%);
+  }
+  > h2 {
+    position: absolute;
+    top: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    color: #c8c8c8;
+  }
+  > p {
+    position: absolute;
+    width: 250px;
+    left: 150px;
+    color: #c8c8c8;
+  }
+  > footer {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    > a {
+      padding-left: 25px;
+      color: #c8c8c8;
+    }
+  }
+}
+
+.Second {
+  display: grid;
+  grid-template-rows: 1.5fr 4fr;
+}
+.Second > :nth-child(1) {
+  background-color: #73fed5;
+  position: relative;
+  > a {
+    margin: 5px;
+    color: white;
+    box-shadow: 0px 0px black 10px;
+  }
+  > button {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #73fed5;
+    border-color: transparent;
+    font-size: 20px;
+    color: white;
+  }
+}
+.Second > :nth-child(2) {
+  background-color: white;
+  position: relative;
+  > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    left: calc(50%);
+    transform: translate(-50%);
+  }
+  > h2 {
+    position: absolute;
+    top: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    color: #c8c8c8;
+  }
+  > p {
+    position: absolute;
+    width: 250px;
+    left: 150px;
+    color: #c8c8c8;
+  }
+  > footer {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    > a {
+      padding-left: 25px;
+      color: #c8c8c8;
+    }
+  }
+}
+
+.third {
+  display: grid;
+  grid-template-rows: 1.5fr 4fr;
+}
+.third > :nth-child(1) {
+  background-color: #73fed5;
+  position: relative;
+  > a {
+    margin: 5px;
+    color: white;
+    box-shadow: 0px 0px black 10px;
+  }
+  > button {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #73fed5;
+    border-color: transparent;
+    font-size: 20px;
+    color: white;
+  }
+}
+.third > :nth-child(2) {
+  background-color: white;
+  position: relative;
+  > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    left: calc(50%);
+    transform: translate(-50%);
+  }
+  > h2 {
+    position: absolute;
+    top: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    color: #c8c8c8;
+  }
+  > p {
+    position: absolute;
+    width: 250px;
+    left: 150px;
+    color: #c8c8c8;
+  }
+  > footer {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    > a {
+      padding-left: 25px;
+      color: #c8c8c8;
+    }
+  }
+}
+
+.forth {
+  display: grid;
+  grid-template-rows: 1.5fr 4fr;
+}
+.forth > :nth-child(1) {
+  background-color: #73fed5;
+  position: relative;
+  > a {
+    margin: 5px;
+    color: white;
+    box-shadow: 0px 0px black 10px;
+  }
+  > button {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #73fed5;
+    border-color: transparent;
+    font-size: 20px;
+    color: white;
+  }
+}
+.forth > :nth-child(2) {
+  background-color: white;
+  position: relative;
+  > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    left: calc(50%);
+    transform: translate(-50%);
+  }
+  > h2 {
+    position: absolute;
+    top: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    color: #c8c8c8;
+  }
+  > p {
+    position: absolute;
+    width: 250px;
+    left: 150px;
+    color: #c8c8c8;
+  }
+  > footer {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translate(-50%);
+    > a {
+      padding-left: 25px;
+      color: #c8c8c8;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f3f2f9;
+  > .card1 {
+    width: 350px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+    > .top {
+      width: 100%;
+      height: 120px;
+      border-radius: 8px;
+      background-color: #03b876;
+      > i {
+        color: white;
+        margin: 5px 0 0 5px;
+        font-size: 20px;
+        background-color: transparent;
+      }
+      > button {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 0px solid transparent;
+        color: #fff;
+        background-color: #03b876;
+        box-shadow: 0 0 5px #2e2722;
+        top: 0;
+        right: 0;
+        position: absolute;
+        transform: translate(10px, -10px);
+      }
+    }
+    > img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 4px solid white;
+      border-radius: 50%;
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    > .bottom {
+      > h2 {
+        text-align: center;
+        margin: 80px auto 30px;
+        font-family: "Dancing Script", "cursive";
+      }
+      > p {
+        color: #7a7c80;
+        text-align: center;
+        padding: 0 30px;
+        font-family: "Poppins";
+      }
+      > .socialicons {
+        > ul {
+          width: 70%;
+          list-style-type: none;
+          display: flex;
+          text-decoration: none;
+          margin: 65px auto 30px;
+          > li {
+            margin: auto;
+            > a {
+              color: gray;
+            }
+          }
+        }
+      }
+    }
+  }
+  .card2 {
+    @extend .card1;
+    > .top {
+      background-color: #1869ff;
+      > button {
+        background-color: #1869ff;
+      }
+    }
+  }
+  .card3 {
+    @extend .card1;
+    > .top {
+      background-color: #3b599a;
+      > button {
+        background-color: #3b599a;
+      }
+    }
+  }
+  .card4 {
+    @extend .card1;
+    > .top {
+      background-color: #1ca1f1;
+      > button {
+        background-color: #1ca1f1;
+      }
+    }
+  }
+  .card5 {
+    @extend .card1;
+    > .top {
+      background-color: #0177b6;
+      > button {
+        background-color: #0177b6;
+      }
+    }
+  }
+  .card6 {
+    @extend .card1;
+    > .top {
+      background-color: #ea4c88;
+      > button {
+        background-color: #ea4c88;
+      }
+    }
+  }
+  .card7 {
+    @extend .card1;
+    > .top {
+      background-color: #f57f01;
+      > button {
+        background-color: #f57f01;
+      }
+    }
+  }
+  .card8 {
+    @extend .card1;
+    > .top {
+      background-color: #bd071e;
+      > button {
+        background-color: #bd071e;
+      }
+    }
+  }
+}

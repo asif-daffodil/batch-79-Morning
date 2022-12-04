@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  background-color: #8684b5;
+  display: grid;
+  > .card {
+    border-radius: 5px;
+    background: #fff;
+    padding-bottom: 30px;
+    box-shadow: 0 0 6px #000;
+    &:first-child {
+      > .title {
+        background: #73fed5;
+        &::before {
+          background: #73fed5;
+        }
+        &::after {
+          background: url("https://upload.wikimedia.org/wikipedia/commons/1/1b/Ananta_Jalil.jpg")
+            no-repeat center / cover;
+        }
+      }
+    }
+    &:nth-child(2) {
+      > .title {
+        background: #9fc1fe;
+        &::before {
+          background: #9fc1fe;
+        }
+        &::after {
+          background: url("https://assets.sentinelassam.com/h-upload/2022/08/04/1600x960_371268-hero-alom.jpg")
+            no-repeat center / cover;
+        }
+      }
+    }
+    &:nth-child(3) {
+      > .title {
+        background: #adc0ea;
+        &::before {
+          background: #adc0ea;
+        }
+        &::after {
+          background: url("https://media.cnn.com/api/v1/images/stellar/prod/221127164140-lionel-messi-inter-miami-rumors-spt-intl.jpg?c=original")
+            no-repeat center / cover;
+        }
+      }
+    }
+    &:nth-child(4) {
+      > .title {
+        background: #9bd9fe;
+        &::before {
+          background: #9bd9fe;
+        }
+        &::after {
+          background: url("https://images7.alphacoders.com/962/thumb-350-962041.jpg")
+            no-repeat center / cover;
+        }
+      }
+    }
+    &:nth-child(5) {
+      > .title {
+        background: #a4d1e8;
+        &::before {
+          background: #a4d1e8;
+        }
+        &::after {
+          background: url("https://imgnew.outlookindia.com/public/uploads/articles/2021/6/13/Shakib-Al-Hasan-File.jpg")
+            no-repeat center / cover;
+        }
+      }
+    }
+    &:nth-child(6) {
+      > .title {
+        background: #ffc7e4;
+        &::before {
+          background: #ffc7e4;
+        }
+        &::after {
+          background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kcXgTS7EM9Y8EZ-fIFe5EEHXYxSucz1AqQ&usqp=CAU")
+            no-repeat center / cover;
+        }
+      }
+    }
+    &:nth-child(7) {
+      > .title {
+        background: #fed9af;
+        &::before {
+          background: #fed9af;
+        }
+        &::after {
+          background: url("https://bangladeshbeyond.com.bd/wp-content/uploads/2021/10/39-1.jpg")
+            no-repeat center / cover;
+        }
+      }
+    }
+    &:last-child {
+      > .title {
+        background: #ff97a5;
+        &::before {
+          background: #ff97a5;
+        }
+        &::after {
+          background: url("https://new-media.dhakatribune.com/en/uploads/2022/08/17/shakib-khan.jpeg")
+            no-repeat center / cover;
+        }
+      }
+    }
+    > .title {
+      width: 100%;
+      color: #fff;
+      padding: 20px;
+      height: 100px;
+      position: relative;
+      border-radius: 5px 0 0 0;
+      box-shadow: 0 1px 1px #999;
+      &::before {
+        content: "\2b";
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-shadow: 0 0 6px #000;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 50%;
+        text-align: center;
+        transform: translate(40%, -30%);
+        cursor: pointer;
+      }
+      &::after {
+        content: "";
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 5px solid #fff;
+        box-shadow: 0 0 4px #000;
+      }
+    }
+    .body {
+      text-align: center;
+      padding: 50px 0;
+      > h2 {
+        font-family: "Dancing Script", cursive;
+        margin-bottom: 12px;
+      }
+      > p {
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    .footer {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      > li {
+        margin: 0 8px;
+        > a {
+          text-decoration: none;
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    grid-gap: 16px;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 1080px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px;
+    grid-gap: 24px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 100px;
+    grid-gap: 36px;
+  }
+}
