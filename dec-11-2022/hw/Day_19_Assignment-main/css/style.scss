@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  height: 894px;
+  border: 1px dashed #ff0011;
+  position: relative;
+  > .top {
+    width: 100%;
+    height: 326px;
+    background: radial-gradient(#1c6377, #202020);
+
+    // ***** Why my background position doesn't work *****
+    // background-position: right 80px;
+    // background-repeat: no-repeat;
+
+    > .tag {
+      width: 350px;
+      height: 75px;
+      text-align: center;
+      background-color: #ffffff;
+      rotate: 317deg;
+      position: absolute;
+      top: 37px;
+      left: -98px;
+      > h1 {
+        font-family: "Bebas Neue";
+        font-size: 42px;
+        font-weight: 900;
+        color: #952c3a;
+        letter-spacing: 2px;
+      }
+      > h4 {
+        font-family: "Bebas Neue";
+        font-size: 19px;
+        color: #858585;
+        margin-top: -11px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  > .cards {
+    padding: 0 35px;
+    display: flex;
+    position: absolute;
+    top: 152px;
+    z-index: 10;
+
+    // Why my common before doesn't work for all *****
+    // &::before {
+    //   content: "";
+    //   width: 150px;
+    //   height: 150px;
+    //   position: absolute;
+    //   background-size: cover;
+    // }
+
+    > :first-child {
+      .cardTop {
+        background-color: rgba(224, 50, 149, 0.85);
+      }
+      &::before {
+        // ***** How to control content size *****
+        // content: url(../images/Jacket_1.png);
+
+        content: "";
+        width: 150px;
+        height: 150px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -100%);
+        background: url("../images/Jacket_1.png");
+        background-size: cover;
+        filter: drop-shadow(2px 2px 2px #000);
+        // box-shadow: 2px 0px 5px rgb(160, 159, 159);
+      }
+      > button {
+        text-align: center;
+        color: #ffffff;
+        font-weight: 800;
+        line-height: 48px;
+        width: 170px;
+        height: 48px;
+        top: 40%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -100%);
+        background-color: #e03294;
+        border-radius: 50px;
+        cursor: pointer;
+        border-width: 0;
+      }
+      &:hover {
+        > button {
+          font-size: 17px;
+          background-color: #f19306;
+          box-shadow: 5px 5px 8px #5e5e5e;
+          transition: 0.2s;
+        }
+      }
+    }
+    > :nth-child(2) {
+      .cardTop {
+        background-color: rgba(245, 53, 104, 0.85);
+      }
+      &::before {
+        content: "";
+        width: 150px;
+        height: 150px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -100%);
+        background: url("../images/Jacket_2.png");
+        background-size: cover;
+        filter: drop-shadow(2px 2px 2px #000);
+      }
+      &::after {
+        content: "SHOP NOW";
+        text-align: center;
+        color: #ffffff;
+        font-weight: 800;
+        line-height: 48px;
+        width: 170px;
+        height: 48px;
+        top: 40%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -100%);
+        background-color: #f53568;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+      &:hover::after {
+        font-size: 17px;
+        background-color: #f19306;
+        box-shadow: 5px 5px 8px #5e5e5e;
+        transition: 0.2s;
+      }
+    }
+    > :last-child {
+      .cardTop {
+        background-color: rgba(28, 74, 107, 0.85);
+      }
+      &::before {
+        content: "";
+        width: 150px;
+        height: 150px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -100%);
+        background: url("../images/Jacket_3.png");
+        background-size: cover;
+        filter: drop-shadow(2px 2px 2px #000);
+      }
+      &::after {
+        content: "SHOP NOW";
+        text-align: center;
+        color: #ffffff;
+        font-weight: 800;
+        line-height: 48px;
+        width: 170px;
+        height: 48px;
+        top: 40%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -100%);
+        background-color: #1c4a6b;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+      &:hover::after {
+        font-size: 17px;
+        background-color: #f19306;
+        box-shadow: 5px 5px 8px #5e5e5e;
+        transition: 0.2s;
+      }
+    }
+
+    > .card {
+      width: 269px;
+      height: 485px;
+      margin: 0 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+
+      // ***** Why this before doesn't work on every card I have *****
+
+      // &::before {
+      //   content: "";
+      //   width: 150px;
+      //   height: 150px;
+      //   top: 50%;
+      //   left: 50%;
+      //   position: absolute;
+      //   background: url("/images/Jacket_1.png");
+      //   background-size: cover;
+      // }
+
+      > .cardTop {
+        width: 100%;
+        height: 174px;
+        > h2 {
+          padding: 30px;
+          color: #ffffff;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+
+      > .cardBottom {
+        width: 100%;
+        height: 311px;
+        text-align: center;
+        background-color: #ffffff;
+        > h3 {
+          font-size: 23px;
+          font-weight: 900;
+          padding-top: 80px;
+        }
+
+        > p {
+          padding-bottom: 20px;
+        }
+
+        > #text {
+          color: #858585;
+          font-size: 16px;
+          padding: 0 10px 25px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  > .bottom {
+    width: 100%;
+    height: 484px;
+    background-color: #eeeeee;
+    > ul {
+      list-style-type: none;
+      display: flex;
+      padding: 10px;
+      margin: 10px;
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translate(-50%);
+      :nth-child(2) {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ec394f;
+      }
+      > li {
+        width: 10px;
+        height: 10px;
+        margin: 16px;
+        border-radius: 50%;
+        background-color: #c1c1c1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  > footer {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: end;
+    background-color: #fff;
+    > img {
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
