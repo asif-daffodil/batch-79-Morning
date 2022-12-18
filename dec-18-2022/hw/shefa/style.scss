@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h1 {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #0c8ce9;
+  }
+}
+.p2,
+.p1 {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #0c8ce9;
+  }
+}
+button {
+  box-shadow: 0px 4px 4px #dc3545;
+}
