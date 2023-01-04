@@ -4,18 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+    <link href="./bootstrap.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
 
     <style>
@@ -234,7 +226,11 @@
               </ul>
             </div>
             <div class="card-footer">
-              <button class="btn btn-primary btn-sm rounded-pill">
+              <button
+                class="btn btn-primary btn-sm rounded-pill"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Read More
               </button>
             </div>
@@ -362,6 +358,366 @@
         </div>
       </div>
       <!-- team part end -->
+
+      <!-- skills and services part start -->
+      <div class="row mt-4 py-3 bg-secondary">
+        <div class="col-md-6">
+          <div class="fs-1 text-white mb-4">Our Skills</div>
+          <div class="mb-3">
+            <label class="text-white">HTML</label>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                style="width: 90%"
+              >
+                90%
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="text-white">CSS</label>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                style="width: 95%"
+              >
+                95%
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="text-white">Bootstrap</label>
+            <div class="progress">
+              <div
+                class="progress-bar bg-dark progress-bar-striped progress-bar-animated"
+                style="width: 80%"
+              >
+                80%
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="text-white">JavaScript</label>
+            <div class="progress">
+              <div
+                class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                style="width: 35%"
+              >
+                35%
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="text-white">React</label>
+            <div class="progress">
+              <div
+                class="progress-bar bg-warning progress-bar-striped progress-bar-animated text-dark"
+                style="width: 50%"
+              >
+                50%
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="fs-1 text-white mb-4">Our Services</div>
+          <table
+            class="table table-dark table-striped table-hover table-bordered"
+          >
+            <tr>
+              <th>S.N.</th>
+              <th>Name</th>
+              <th>Project</th>
+              <th>Reviews</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>HTML</td>
+              <td>50</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>CSS</td>
+              <td>45</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>Bootstrap</td>
+              <td>64</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>JavaScript</td>
+              <td>36</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td>jQuery</td>
+              <td>3</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td>React</td>
+              <td>18</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- skills and services part end -->
+
+      <!-- contact part start -->
+      <div class="row mt-4 py-3">
+        <div class="col-md-12 fs-1 text-center p-3">Contact Us</div>
+        <div class="col-md-6">
+          <form action="">
+            <div class="mb-3 form-floating">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="form-control border-0 border-bottom shadow-none rounded-0"
+              />
+              <label>Your Name</label>
+            </div>
+            <div class="mb-3 form-floating">
+              <input
+                type="text"
+                placeholder="Your Email"
+                class="form-control border-0 border-bottom shadow-none rounded-0"
+              />
+              <label>Your Email</label>
+            </div>
+            <div class="mb-3 form-floating">
+              <textarea
+                class="form-control border-0 border-bottom shadow-none rounded-0"
+                placeholder="Your Comment"
+                style="height: 100px; resize: none"
+              ></textarea>
+              <label>Your Comment</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">
+              Send Message
+            </button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.397671916213!2d90.36771751445552!3d23.73319439535153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bfbe6c0bab8b%3A0x8784d7f5150e9ae3!2sAsif%20Abir!5e0!3m2!1sen!2sbd!4v1672821141811!5m2!1sen!2sbd"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <!-- contact part end -->
+
+      <!-- footer part start -->
+      <!-- Footer -->
+      <footer class="text-center text-lg-start bg-dark text-light">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="#" class="me-4 text-white text-decoration-none">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="me-4 text-white text-decoration-none">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="me-4 text-white text-decoration-none">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="me-4 text-white text-decoration-none">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="me-4 text-white text-decoration-none">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="me-4 text-white text-decoration-none">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Company name
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <p>
+                  <a href="#!" class="text-reset">Angular</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">React</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Vue</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Laravel</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2021 Copyright:
+          <a
+            class="text-reset fw-bold"
+            href="https://resume-of-asif.netlify.app/"
+            >Asif Abir</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+      <!-- footer part end -->
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Milkyway Gallexy
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            repellendus expedita quo perspiciatis a accusantium libero inventore
+            necessitatibus commodi! Tempore voluptate veritatis quod earum odio
+            mollitia quibusdam rem enim nesciunt, eius sequi quo minus libero
+            quasi quisquam officia, aliquid porro sunt ab necessitatibus error
+            iure nihil accusamus. Corrupti, ducimus at.
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
