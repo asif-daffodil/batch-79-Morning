@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="myForm">
+        <input type="file" name="inp">
+        <button type="submit">Upload</button>
+    </form>
+    <div></div>
+    <img src="" alt="" id="dimg">
+
+    <script>
+        const myForm = document.getElementById("myForm");
+        const errDiv = myForm.nextElementSibling;
+        const inp = document.getElementsByName("inp")[0];
+        const dimg = document.getElementById("dimg");
+        errDiv.style.cssText = "color: red";
+        myForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const myFormData = new FormData(myForm);
+            const formImg  = myFormData.get("inp");
+            if(!formImg.name){
+                errDiv.textContent = "Please write your name";
+            }else if(formImg.type != 'image/jpeg' && formImg.type != 'image/jpg' && formImg.type != 'image/png'){
+                errDiv.textContent = "Invalid Image formate";
+            }else{
+                errDiv.textContent = null;
+            }
+        })
+
+        inp.addEventListener("change", ()=>{
+            const [file] = inp.files;
+            if(file.type != 'image/jpeg' && file.type != 'image/jpg' && file.type != 'image/png'){
+                errDiv.textContent = "Invalid Image formate";
+                dimg.src = null;
+            }else{
+                errDiv.textContent = null;
+                dimg.src = URL.createObjectURL(file);
+            }
+        })
+    </script>
+</body>
+</html>
