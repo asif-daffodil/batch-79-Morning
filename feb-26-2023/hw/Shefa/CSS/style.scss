@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  > .accordion {
+    width: 600px;
+    margin: auto;
+
+    > .accr {
+      border: 1px solid #000;
+      border-radius: 6px;
+      overflow: hidden;
+      &:not(&:last-child) {
+        margin-bottom: 20px;
+      }
+      > .head {
+        font-weight: bolder;
+        font-size: 40px;
+        text-transform: uppercase;
+        padding: 16px;
+        cursor: pointer;
+      }
+      > .head-active {
+        font-weight: bolder;
+        font-size: 40px;
+        text-transform: uppercase;
+        padding: 16px;
+        cursor: pointer;
+        background: #000;
+        color: white;
+      }
+      > .body {
+        font-style: italic;
+        padding: 16px;
+        position: relative;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: #ccc;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        transform: scaleY(0%);
+        height: 0;
+        padding: 0;
+        transition: 0.1s;
+      }
+      > .body-active {
+        font-style: italic;
+        padding: 16px;
+        position: relative;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: #ccc;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        transform: scaleY(100%);
+        height: max-content;
+        padding: 20px;
+        transition: 0.1s;
+      }
+    }
+  }
+}
