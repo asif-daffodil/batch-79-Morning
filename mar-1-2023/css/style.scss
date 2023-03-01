@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    .main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        >div {
+            width: 1000px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+            >img {
+                width: 1000px;
+                height: 400px;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            >h2{
+                width: max-content;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: #fff;
+                background: rgba(0,0,0,0.6);
+                padding: 12px 30px;
+                transform: translate(-50%, -50%);
+                border-radius: 30px/50%;
+                cursor: pointer;
+                box-shadow: 0 0 10px #00f inset;
+                text-transform: uppercase;
+                letter-spacing: 5px;font-size: 32px;
+                font-family: arial;
+                text-shadow: 2px 2px 2px #00f;
+            }
+        }
+    }
+    .left, .right{
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: rgba(0,0,0,0.6);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .left{
+        left: -100px;
+    }
+    .right{
+        right: -100px;
+    }
+    &:hover{
+        .left{
+            left: 0;
+        }
+        .right{
+            right: 0;
+        }
+    }
+    ul{
+        list-style: none;
+        width: max-content;
+        display: flex;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        >li {
+            width: 40px;
+            line-height: 40px;
+            background: rgba(0,0,0,0.8);
+            color: #fff;
+            text-align: center;
+            margin: 0 5px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+.d-none{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.active {
+    border: 2px solid #00f;
+    color: #00f !important;
+    background: rgba(255,255,255,0.8) !important;
+    font-weight: bolder;
+}
