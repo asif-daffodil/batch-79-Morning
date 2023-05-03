@@ -53,6 +53,9 @@ const Navbar = () => {
                 <li>
                     <NavLink to="/allpost" className={({ isActive, isPending }) => isPending ? "text-gray-700": isActive ? "text-blue-700" : null + `block py-2 pl-3 pr-4  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700`} aria-current="page">All Post</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/people" className={({ isActive, isPending }) => isPending ? "text-gray-700": isActive ? "text-blue-700" : null + `block py-2 pl-3 pr-4  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700`} aria-current="page">People</NavLink>
+                </li>
                 <li className='hidden md:block'>
                     <button className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" onClick={()=> darkHandeller()}>
                         <FontAwesomeIcon icon={faMoon} />

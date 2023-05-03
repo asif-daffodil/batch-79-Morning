@@ -6,6 +6,7 @@ import MarketPlace from './Pages/MarketPlace';
 import Resources from './Pages/Resources';
 import Posts from './Pages/Posts';
 import Post from './Pages/Post';
+import People from './Pages/People';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/resources' element={<Resources />} />
         <Route path='/allpost' element={<Posts />} />
         <Route path='/allpost/:postId' element={<Post />} />
+        <Route path='/people' element={<People />} />
       </Routes>
       <Footer />
     </div>
